@@ -1,0 +1,66 @@
+.wrapperHero {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+.primary {
+  color: #8056eb;
+}
+
+.lineBreak {
+  display: block;
+}
+
+.subtitle {
+  color: #a8a8a8;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.inputSearch {
+  border: 2px solid #dee1e2;
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 23%;
+
+  &:hover {
+    border: 2px solid #ccc;
+  }
+
+  &:focus {
+    border: 2px solid #8056eb;
+    outline: none;
+  }
+}
+
+.buttonSearch {
+  color: white;
+  cursor: pointer;
+  background-color: #8056eb;
+  border: none;
+  border-radius: 50px;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  &:hover {
+    background-color: #5b24e7;
+  }
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}

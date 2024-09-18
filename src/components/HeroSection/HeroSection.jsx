@@ -1,5 +1,6 @@
+import { SearchButton } from "../SearchButton/SearchButton.jsx";
+import { SearchInput } from "../SearchInput/SearchInput.jsx";
 import styles from "./HeroSection.module.scss";
-import { CiSearch } from "react-icons/ci";
 
 export const HeroSection = () => {
   return (
@@ -12,15 +13,8 @@ export const HeroSection = () => {
         Explore Best Home Service & Repair near you
       </p>
       <div className={styles.searchContainer}>
-        <input
-          className={styles.inputSearch}
-          type="search"
-          name="search"
-          placeholder="Search"
-        />
-        <button className={styles.buttonSearch}>
-          <CiSearch fontSize={24} />
-        </button>
+        <SearchInput />
+        <SearchButton />
       </div>
     </div>
   );

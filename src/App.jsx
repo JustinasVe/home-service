@@ -1,11 +1,9 @@
-import { GiWorld } from "react-icons/gi";
+import { TopBar } from "./components/TopBar/TopBar";
 
 function App() {
   return (
     <>
-      <h1>
-        Hello <GiWorld />
-      </h1>
+      <TopBar />
     </>
   );
 }

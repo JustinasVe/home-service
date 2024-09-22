@@ -1,0 +1,14 @@
+.card {
+  background-color: #f2eefd;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 160px;
+  width: 120px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

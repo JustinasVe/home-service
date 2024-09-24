@@ -1,3 +1,4 @@
+import { CategoryList } from "./components/CategoryList/CategoryList";
 import { HeroSection } from "./components/HeroSection/HeroSection";
 import { TopBar } from "./components/TopBar/TopBar";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <TopBar />
       <HeroSection />
+      <CategoryList />
     </>
   );
 }

@@ -11,4 +11,22 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  &:hover {
+    background-color: #f7f4fd;
+    transition: 0.3s;
+  }
+
+  &:hover .cardTitle {
+    color: #8056eb;
+    transition: 0.3s;
+  }
+}
+
+.cardTitle {
+  color: #9977ef;
+}
+
+.cardIcon {
+  font-size: 48px;
 }

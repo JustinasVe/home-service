@@ -1,14 +1,9 @@
-import { CategoryList } from "./components/CategoryList/CategoryList";
-import { HeroSection } from "./components/HeroSection/HeroSection";
-import { TopBar } from "./components/TopBar/TopBar";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/router";
 
 function App() {
   return (
-    <>
-      <TopBar />
-      <HeroSection />
-      <CategoryList />
-    </>
+    <RouterProvider router={router} />
   );
 }
 

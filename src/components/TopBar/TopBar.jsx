@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoipsum from "../../assets/logoipsum.svg";
 import styles from "./TopBar.module.scss";
 
@@ -8,13 +9,13 @@ export const TopBar = () => {
         <img src={logoipsum} alt="Logo" className={styles.logo} />
         <ul className={styles.navLinks}>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <a href="/about-us">About Us</a>
+            <Link to="/about-us">About Us</Link>
           </li>
         </ul>
       </div>

@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logoipsum from "../../assets/logoipsum.svg";
 import styles from "./TopBar.module.scss";
 
 export const TopBar = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <nav className={styles.topbar}>
       <div className={styles.leftSide}>
@@ -19,7 +25,9 @@ export const TopBar = () => {
           </li>
         </ul>
       </div>
-      <button className={styles.loginBtn}>Login / Sign Up</button>
+      <button onClick={handleLogin} className={styles.loginBtn}>
+        Login / Sign Up
+      </button>
     </nav>
   );
 };

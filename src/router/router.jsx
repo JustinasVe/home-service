@@ -4,10 +4,19 @@ import { ServicesPage } from "../pages/ServicesPage/ServicesPage";
 import { AboutUsPage } from "../pages/AboutUsPage/AboutUsPage";
 import { LoginPage } from "../pages/LoginPage/LoginPage";
 import { TopBarLayout } from "../layouts/TopBarLayout/TopBarLayout";
+import { RegisterPage } from "../pages/RegisterPage/RegisterPage";
+
+export const routes = {
+  home: "/",
+  services: "/services",
+  aboutUs: "/about-us",
+  login: "/login",
+  register: "/register",
+};
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: routes.home,
     element: <TopBarLayout />,
     children: [
       {
@@ -15,16 +24,20 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/services",
+        path: routes.services,
         element: <ServicesPage />,
       },
       {
-        path: "/about-us",
+        path: routes.aboutUs,
         element: <AboutUsPage />,
       },
       {
-        path: "/login",
+        path: routes.login,
         element: <LoginPage />,
+      },
+      {
+        path: routes.register,
+        element: <RegisterPage />,
       },
     ],
   },

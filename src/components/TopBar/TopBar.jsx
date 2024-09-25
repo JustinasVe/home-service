@@ -1,12 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import logoipsum from "../../assets/logoipsum.svg";
 import styles from "./TopBar.module.scss";
+import { routes } from "../../router/router";
 
 export const TopBar = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate("/login");
+    navigate(routes.login);
   };
 
   return (
@@ -15,13 +16,13 @@ export const TopBar = () => {
         <img src={logoipsum} alt="Logo" className={styles.logo} />
         <ul className={styles.navLinks}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to={routes.home}>Home</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to={routes.services}>Services</Link>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <Link to={routes.aboutUs}>About Us</Link>
           </li>
         </ul>
       </div>

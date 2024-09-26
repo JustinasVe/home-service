@@ -6,6 +6,7 @@ import { LoginPage } from "../pages/LoginPage/LoginPage";
 import { TopBarLayout } from "../layouts/TopBarLayout/TopBarLayout";
 import { RegisterPage } from "../pages/RegisterPage/RegisterPage";
 import { SearchCategoryPage } from "../pages/SearchCategoryPage/SearchCategoryPage";
+import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 
 export const routes = {
   home: "/",
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
   {
     path: routes.home,
     element: <TopBarLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

@@ -5,6 +5,7 @@ import { AboutUsPage } from "../pages/AboutUsPage/AboutUsPage";
 import { LoginPage } from "../pages/LoginPage/LoginPage";
 import { TopBarLayout } from "../layouts/TopBarLayout/TopBarLayout";
 import { RegisterPage } from "../pages/RegisterPage/RegisterPage";
+import { SearchCategoryPage } from "../pages/SearchCategoryPage/SearchCategoryPage";
 
 export const routes = {
   home: "/",
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: routes.register,
         element: <RegisterPage />,
+      },
+      {
+        path: "/search/:category",
+        element: <SearchCategoryPage />,
       },
     ],
   },

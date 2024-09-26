@@ -4,6 +4,7 @@ import { FaTools, FaPaintRoller } from "react-icons/fa";
 import { FaTruckFast, FaFaucetDrip } from "react-icons/fa6";
 import { BsFillLightningFill } from "react-icons/bs";
 import styles from "./CategoryList.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const categories = [
   {
@@ -45,6 +46,12 @@ const categories = [
 ];
 
 export const CategoryList = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (categoryTitle) => {
+    navigate(`/search/${categoryTitle}`);
+  };
+
   return (
     <div className={styles.listContainer}>
       {categories.map((category) => (
@@ -53,6 +60,7 @@ export const CategoryList = () => {
           icon={category.icon}
           title={category.title}
           iconColor={category.color}
+          onClick={() => handleCardClick(category.title)}
         />
       ))}
     </div>

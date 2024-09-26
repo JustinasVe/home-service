@@ -1,8 +1,8 @@
 import styles from "./CategoryCard.module.scss";
 
-export const CategoryCard = ({ icon, title, iconColor }) => {
+export const CategoryCard = ({ icon, title, iconColor, onClick }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       <div className={styles.cardIcon} style={{ color: iconColor }}>
         {icon}
       </div>

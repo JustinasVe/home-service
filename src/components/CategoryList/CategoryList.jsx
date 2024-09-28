@@ -4,7 +4,8 @@ import { FaTools, FaPaintRoller } from "react-icons/fa";
 import { FaTruckFast, FaFaucetDrip } from "react-icons/fa6";
 import { BsFillLightningFill } from "react-icons/bs";
 import styles from "./CategoryList.module.scss";
-import { useNavigate } from "react-router-dom";
+import { generatePath, useNavigate } from "react-router-dom";
+import { routes } from "../../router/router";
 
 const categories = [
   {
@@ -49,7 +50,8 @@ export const CategoryList = () => {
   const navigate = useNavigate();
 
   const handleCardClick = (categoryTitle) => {
-    navigate(`/search/${categoryTitle}`);
+    const path = generatePath(routes.searchCategory, { category: categoryTitle });
+    navigate(path);
   };
 
   return (

@@ -14,6 +14,7 @@ export const routes = {
   aboutUs: "/about-us",
   login: "/login",
   register: "/register",
+  searchCategory: "/search/:category",
 };
 
 export const router = createBrowserRouter([
@@ -43,7 +44,7 @@ export const router = createBrowserRouter([
         element: <RegisterPage />,
       },
       {
-        path: "/search/:category",
+        path: routes.searchCategory,
         element: <SearchCategoryPage />,
       },
     ],

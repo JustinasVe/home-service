@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { routes } from "../../router/router";
 import styles from "./LoginPage.module.scss";
 import { Input } from "../../components/Input/Input";
-import { Button } from "../../Button/Button";
+import { Button } from "../../components/Button/Button";
 import { useState } from "react";
 
 export const LoginPage = () => {

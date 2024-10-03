@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { routes } from "../../router/router";
 import { Input } from "../../components/Input/Input";
-import { Button } from "../../Button/Button";
+import { Button } from "../../components/Button/Button";
 import styles from "./RegisterPage.module.scss";
 import { useState } from "react";
 

@@ -1,0 +1,16 @@
+.title {
+  color: #8056eb;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.verticalCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}

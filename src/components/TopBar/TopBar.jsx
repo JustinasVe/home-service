@@ -7,7 +7,7 @@ export const TopBar = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate(routes.login);
+    navigate(routes.auth.login);
   };
 
   return (

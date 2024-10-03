@@ -7,14 +7,17 @@ import { TopBarLayout } from "../layouts/TopBarLayout/TopBarLayout";
 import { RegisterPage } from "../pages/RegisterPage/RegisterPage";
 import { SearchCategoryPage } from "../pages/SearchCategoryPage/SearchCategoryPage";
 import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
+import { AuthLayout } from "../layouts/AuthLayout/AuthLayout";
 
 export const routes = {
   home: "/",
   services: "/services",
   aboutUs: "/about-us",
-  login: "/login",
-  register: "/register",
   searchCategory: "/search/:category",
+  auth: {
+    login: "/login",
+    register: "/register",
+  },
 };
 
 export const router = createBrowserRouter([
@@ -36,16 +39,22 @@ export const router = createBrowserRouter([
         element: <AboutUsPage />,
       },
       {
-        path: routes.login,
+        path: routes.searchCategory,
+        element: <SearchCategoryPage />,
+      },
+    ],
+  },
+  {
+    element: <AuthLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: routes.auth.login,
         element: <LoginPage />,
       },
       {
-        path: routes.register,
+        path: routes.auth.register,
         element: <RegisterPage />,
-      },
-      {
-        path: routes.searchCategory,
-        element: <SearchCategoryPage />,
       },
     ],
   },
